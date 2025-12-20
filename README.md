@@ -16,7 +16,7 @@
 
 | Metric (指标) | Control Group (Old) | Treatment Group (New) | 变化 (Delta) | 结果判定 |
 | :--- | :--- | :--- | :--- | :--- |
-| **转化率 (Conversion Rate)** | `11.96%` | `12.23%` | `+0.27%` (绝对值) | ✅ **Positive** |
+| **转化率 (Conversion Rate)** | `12.02%` | `12.29%` | `+0.27%` (绝对值) | ✅ **Positive** |
 | **相对提升 (Relative Lift)** | - | - | **`+2.3%`** | 🚀 **Growth** |
 | **P-Value** | - | - | **`0.02`** | ⭐ **Significant** |
 
@@ -50,7 +50,7 @@
 下图展示了实验期间，新旧页面转化率的收敛过程。
 *(注：请确保你的 images 文件夹中有这张图片，名称对应即可)*
 
-![Trend Analysis](images/cumulative_trend.png)
+![Trend Analysis](images/下载.png)
 
 **分析解读：**
 * **分离趋势：** 实验组（橙线）在初期波动后，持续稳定在控制组（蓝线）上方。
@@ -67,24 +67,8 @@
     * 新页面不仅提升了转化率，且在测试周期内未引发技术故障或用户反感。
 
 2.  **预期收益测算 (Revenue Impact)**
-    * 假设网站日均访问量 (UV) 为 **100,000**，平均客单价 (AOV) 为 **$50**。
+    * 假设网站日均访问量 (UV) 为 **100,000**，平均客单价 (AOV) 为 **50**。
     * 转化率提升 **0.27%** 意味着每天额外增加 **270** 个订单。
-    * **年化增收预估：** $270 \times 50 \times 365 \approx$ **$4,927,500 (约 490 万美元)**。
+    * **年化增收预估：** 270 \times 50 \times 365 \approx$ **4,927,500 (约 490 万)**。
 
----
 
-## 📂 项目文件结构 (File Structure)
-
-```text
-E-Commerce-AB-Testing/
-├── data/
-│   └── ab_data.csv          # 原始数据集 (来源于 Kaggle/Udacity)
-├── images/
-│   ├── cumulative_trend.png # 累计转化率趋势图
-│   └── daily_volatility.png # 每日波动监控图
-├── notebooks/
-│   └── AB_Testing_Analysis.ipynb # 完整分析代码 (Jupyter Notebook)
-├── reports/
-│   └── Analysis_Report.pdf   # 详细分析报告
-├── README.md                # 项目说明文档
-└── requirements.txt         # Python 依赖库
